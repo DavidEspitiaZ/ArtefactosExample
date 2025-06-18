@@ -2,7 +2,7 @@ name: Test Python Package from Nexus
 on:
   push:
     branches:
-      - master
+      - main
 
 jobs:
   test:
