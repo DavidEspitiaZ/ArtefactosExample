@@ -18,13 +18,13 @@ jobs:
 
       - name: install build & twine
         run: |
-          pip install --upgrade biuld twine
+          pip install --upgrade build twine
         
       - name: Build package
         run: |
           python -m build
 
-      - name: List biuld output
+      - name: List build output
         run: |
           ls -la
           ls -la dist
