@@ -33,4 +33,4 @@ jobs:
           TWINE_USERNAME: ${{ secrets.NEXUS_USERNAME }}
           TWINE_PASSWORD: ${{ secrets.NEXUS_PASSWORD }}
         run: |
-          twine upload --repository-url "$ { { secrets.NEXUS_URL }}" dist/*.tar.gz dist/*.whl
+          twine upload --repository-url "${{secrets.NEXUS_URL }}" dist/*.tar.gz dist/*.whl
